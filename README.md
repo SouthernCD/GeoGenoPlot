@@ -13,10 +13,10 @@ pip install geogenoplot
 geogenoplot [-h] [-p] [-n ENV_FACTOR_NAME] [-s {pearson,spearman,kruskal,all}] [-t] [--lat LAT] [--lon LON] vcf_file raster_file georef_table var_id
 
 positional arguments:
-  vcf_file              input vmo directory
-  raster_file           output file
-  georef_table          output file
-  var_id                output file
+  vcf_file              input vcf file
+  raster_file           input raster file
+  georef_table          input georeference table, should be a csv file with columns: sample_id, latitude, longitude
+  var_id                variable id, should be match ID column in the vcf file
 
 optional arguments:
   -h, --help            show this help message and exit
